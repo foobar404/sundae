@@ -10,7 +10,6 @@ export const GlobalStyle = createGlobalStyle`
 
 	*{
 		box-sizing:border-box;
-		overflow:auto;
 		font-family:${themeGet("fonts.body")};
 		font-weight:${themeGet("fontWeights.body")};
 		font-size:${themeGet("fontSizes[2]")};

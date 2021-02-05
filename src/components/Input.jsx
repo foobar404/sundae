@@ -6,16 +6,27 @@ import {useField} from "react-form";
 
 
 const Style = styled.div`
-    ${mix.hw("48px",["100%","100%","300px"])}
+    ${mix.hw("48px",["100%","100%","350px"])}
     ${mix.row("flex-start","stretch")}
+    ${mix.stretch()}
     ${mix.m(4,0)}
     ${mix.children([css`
         ${mix.hw("50%",[3,3])}
         align-self:center;
     `])}
 
+    background:#2E313C;
+    color:white;
+    border-radius:25px;
+
+    input{color:white;}
+    
     input:hover + pre{
         display:none;
+    }
+
+    svg{
+        max-width:30px;
     }
 
     pre{

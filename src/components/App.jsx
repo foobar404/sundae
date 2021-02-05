@@ -1,9 +1,9 @@
 import React,{createContext,useReducer} from 'react'
-import {Root} from "../pages"
+import {Root,Auth,Tone} from "../pages"
 import {theme,reducer,initialState} from "../util"
 import {ThemeProvider} from 'styled-components';
 import {BrowserRouter,Route} from "react-router-dom"
-import {GlobalStyle} from "../components"
+import {GlobalStyle,ProtectedRoute} from "../components"
 
 
 export const Context = createContext()
@@ -18,7 +18,9 @@ export function App() {
 				<GlobalStyle />
 
 				<BrowserRouter>
-					<Route path="/" exact component={Root} />
+					<ProtectedRoute path="/" exact component={Root} />
+					<Route path="/auth" component={Auth}/>
+					<Route path="/tone" component={Tone}/>
 				</BrowserRouter>
 
 			</ThemeProvider>

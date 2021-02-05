@@ -13,9 +13,9 @@ export const theme = {
         text: 'hsl(0,0%,0%)',
         background: 'hsl(0,0%,100%)',
         primary: {
-            main:'hsl(231deg,48%,48%)',
-            dark:'hsl(231deg,48%,38%)',
-            light:'hsl(231deg,48%,58%)'
+            main:'hsl(56deg 100% 49%)',
+            dark:'hsl(56deg 100% 39%)',
+            light:'hsl(56deg 100% 59%)'
         },
         secondary: {
             main:'hsl(339deg,100%,48%)',
@@ -47,8 +47,8 @@ export const theme = {
         'hsl(0deg,0%,60%)','hsl(0deg,0%,56%)','hsl(0deg,0%,52%)','hsl(0deg,0%,48%)','hsl(0deg,0%,44%)','hsl(0deg,0%,40%)']
     },
     fonts:{
-        body:'sans-serif',
-        heading:'cursive'
+        body:'Helvetica',
+        heading:'Helvetica'
     },
     fontSizes: [
         '12px', '14px', '16px', '20px', '24px', '32px', '48px', '64px',

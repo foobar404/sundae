@@ -1,5 +1,9 @@
+import {Auth} from "./Auth/"
 import {Root} from "./Root"
+import {Tone} from "./Tone"
 
 export {
-    Root
+    Auth,
+    Root,
+    Tone
 }
